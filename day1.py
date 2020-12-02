@@ -11,6 +11,14 @@ def sum_year(nums, year):
             return a * b
         seen.add(a)
 
+def three_sum(nums, year):
+    seen = set()
+    for a in nums:
+        b = year - a
+        if b in seen:
+            return a * b
+        seen.add(a)
+
 
 if __name__ == '__main__':
     print(sum_year(EXPENSE_REPORT, 2020))
