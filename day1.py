@@ -15,7 +15,7 @@ def two_sum_year(nums, year):
 
 def three_sum_year(nums, year):
     for i, a in enumerate(nums):
-        result = two_sum_year(islice(nums, i, len(nums)), year-a)
+        result = two_sum_year(islice(nums, i+1, len(nums)), year-a)
         if result:
             return result*a
 
